@@ -1,0 +1,56 @@
+/* 4.2 Billboard
+/*----------------------------------------------*/
+/*------------Swiper Arrow -----------*/
+.swiper-next,
+.swiper-prev{
+  color: var(--black-color);
+  z-index: 9999;
+}
+.swiper-button-disabled{
+  color: var(--gray-color-500);
+}
+
+@media only screen and (max-width: 765px) {
+  section#billboard{
+    height: 100vh !important;
+  }
+}
+
+/* 4.3 Icon Box - Company Services
+/*----------------------------------------------*/
+.icon-box .icon-box-icon svg {
+  width: 33px;
+  height: 33px;
+  fill: var(--primary-color);
+}
+
+@media only screen and (max-width: 991px) {
+  #company-services .icon-box {
+    flex-wrap: wrap;
+  }
+}
+
+/* 4.4 Product
+/*----------------------------------------------*/
+.card-concern{
+  text-align: center;
+  bottom: 145px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+.card-concern .btn{
+  padding: 1.125rem;
+}
+.card-concern svg {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+.card:hover .card-concern{
+  bottom: 160px;
+  opacity: 1;
+}

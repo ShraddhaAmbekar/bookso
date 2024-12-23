@@ -1,0 +1,67 @@
+/* About Section Styling */
+#about {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+/* About Title */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* About Description */
+.about-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+/* About Stats Section */
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+}

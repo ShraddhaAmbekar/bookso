@@ -1,0 +1,120 @@
+/* General styling for the navbar */
+#header-nav {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow for navbar */
+}
+
+/* Navbar brand (logo) styling */
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-brand .logo {
+  width: 150px; /* adjust the logo size */
+  height: auto;
+}
+
+/* Navbar link styling */
+.nav-link {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #333; /* dark text color */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: none;
+}
+
+/* Active nav-link styling */
+.nav-link.active {
+  color: #007bff; /* Highlight active link */
+}
+
+/* Dropdown styling */
+.nav-item.dropdown .nav-link {
+  padding-right: 30px; /* space for the dropdown arrow */
+}
+
+.nav-item.dropdown .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item.dropdown .dropdown-item {
+  padding: 12px 20px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #333;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Navbar toggler styling */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff; /* Change color of hamburger icon */
+}
+
+/* Offcanvas menu styling */
+.offcanvas-body {
+  padding-top: 20px;
+}
+
+.offcanvas-body .navbar-nav {
+  margin-top: 30px;
+}
+
+.offcanvas-header .navbar-brand {
+  margin-bottom: 0; /* No margin for logo in offcanvas */
+}
+
+.offcanvas-body .nav-link {
+  font-size: 1.2rem;
+  padding: 12px 15px;
+}
+
+.offcanvas-body .nav-item {
+  margin-bottom: 10px;
+}
+
+/* Custom media queries for responsiveness */
+@media (min-width: 992px) {
+  /* For large screens: ensure navbar items are aligned in a row */
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    display: none; /* Hide toggler on larger screens */
+  }
+
+  .offcanvas-body {
+    display: none; /* Hide offcanvas body */
+  }
+}
+
+@media (max-width: 992px) {
+  /* For smaller screens: navbar links should be in a column */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    display: block; /* Show toggler on small screens */
+  }
+
+  .navbar-toggler-icon {
+    background-color: #007bff;
+  }
+}
