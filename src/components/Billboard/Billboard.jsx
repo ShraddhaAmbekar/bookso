@@ -2,23 +2,19 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Billboard.css";
 
-// Import images correctly
-import bannerImageBg from "../../assets/images/banner-image-bg.jpg";
-import bannerImage1 from "../../assets/images/banner-image1.png";
-import bannerImage2 from "../../assets/images/banner-image2.png";
-import bannerImage3 from "../../assets/images/banner-image.png";
-
 const Billboard = () => {
   return (
     <section
       id="billboard"
       className="position-relative d-flex align-items-center py-5 bg-light-gray"
       style={{
-        backgroundImage: `url(${bannerImageBg})`,
+        backgroundImage: `url(/assets/images/banner-image-bg-1.jpg)`,
         backgroundSize: "cover",
+        backgroundColor:"pink",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        height: "800px",
+        height: "700px",
+      
       }}
     >
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -38,7 +34,7 @@ const Billboard = () => {
                 <div className="col-md-6 text-center">
                   <div className="image-holder">
                     <img
-                      src={bannerImage2}
+                      src="/assets/images/banner-image2.png"
                       className="img-fluid"
                       alt="banner"
                     />
@@ -63,7 +59,7 @@ const Billboard = () => {
                 <div className="col-md-6 text-center">
                   <div className="image-holder">
                     <img
-                      src={bannerImage1}
+                      src="/assets/images/banner-image1.png"
                       className="img-fluid"
                       alt="banner"
                     />
@@ -88,7 +84,7 @@ const Billboard = () => {
                 <div className="col-md-6 text-center">
                   <div className="image-holder">
                     <img
-                      src={bannerImage3}
+                      src="/assets/images/banner-image.png"
                       className="img-fluid"
                       alt="banner"
                     />

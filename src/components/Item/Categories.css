@@ -1,0 +1,84 @@
+/* General Section Styling */
+#categories {
+  padding: 3rem 0; /* Adds vertical spacing */
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+#categories .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#categories .section-title h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark gray for the title */
+}
+
+/* Card Styling */
+#categories .card {
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  border-radius: 8px; /* Smooth corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+  position: relative;
+}
+
+#categories .card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+#categories .card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+#categories .card:hover img {
+  opacity: 0.9; /* Subtle fade effect on hover */
+}
+
+/* Category Name Styling */
+#categories .card h6 {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff; /* Primary color background */
+  color: #fff; /* White text */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#categories .card h6 a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from h6 */
+}
+
+#categories .card:hover h6 {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateX(-50%) translateY(-5px); /* Slight lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #categories .card {
+    margin-bottom: 1.5rem; /* Extra spacing for smaller screens */
+  }
+
+  #categories .section-title h3 {
+    font-size: 1.8rem; /* Slightly smaller title font */
+  }
+
+  #categories .card h6 {
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
+  }
+}

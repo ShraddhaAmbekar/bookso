@@ -1,44 +1,42 @@
 import React, { useRef, useEffect } from 'react';
-import backgroundImage from '../../assets/images/banner-image-bg.jpg'; // Adjust the path accordingly
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const CustomerReviews = () => {
-  const carouselRef = useRef(null); // Reference for the carousel
+  const carouselRef = useRef(null); 
 
   const reviews = [
     {
-      text: '"I stumbled upon this bookstore while visiting the city, and it instantly became my favorite spot. The cozy atmosphere, friendly staff, and wide selection of books make every visit a delight!"',
+      text: '"This bookstore is a hidden gem! The collection of classic literature and modern novels is incredible. The staff is always ready to help with recommendations, and the reading corner is my favorite place to unwind."',
       rating: 5,
-      name: 'Emma Chamberlin',
+      name: 'Sophia Miller',
     },
     {
-      text: '"As an avid reader, I\'m always on the lookout for new releases, and this bookstore never disappoints. They always have the latest titles, and their recommendations have introduced me to some incredible reads!"',
+      text: '"I love this bookstore! Their selection of children’s books is fantastic, and my kids always find something they enjoy. It’s the perfect place for family visits and cultivating a love for reading."',
       rating: 5,
-      name: 'Thomas John',
+      name: 'Liam Brown',
     },
     {
-      text: '"I ordered a few books online from this store, and I was impressed by the quick delivery and careful packaging. It\'s clear that they prioritize customer satisfaction, and I\'ll definitely be shopping here again!"',
+      text: '"The online ordering system is so convenient. I was impressed with the fast delivery and how carefully the books were packaged. Highly recommend for book lovers!"',
       rating: 5,
-      name: 'Kevin Bryan',
+      name: 'Olivia Taylor',
     },
     {
-      text: '“I stumbled upon this tech store while searching for a new laptop, and I couldn\'t be happier with my experience! The staff was incredibly knowledgeable and guided me through the process of choosing the perfect device for my needs. Highly recommended!”',
+      text: '"The staff at this bookstore truly know their books! They helped me find the perfect gift for my friend who’s an avid reader. Exceptional customer service and a great atmosphere."',
       rating: 5,
-      name: 'Stevin',
+      name: 'James Wilson',
     },
     {
-      text: '“I stumbled upon this tech store while searching for a new laptop, and I couldn\'t be happier with my experience! The staff was incredibly knowledgeable and guided me through the process of choosing the perfect device for my needs. Highly recommended!”',
+      text: '"I attended one of their book signing events and had such a wonderful time. This bookstore has become my go-to spot for discovering new authors and connecting with fellow readers."',
       rating: 5,
-      name: 'Roman',
+      name: 'Emily Davis',
     },
   ];
 
-  // Initialize carousel when component mounts
   useEffect(() => {
     if (carouselRef.current) {
-      // Create a carousel instance
+    
       new bootstrap.Carousel(carouselRef.current);
     }
   }, []);
@@ -62,13 +60,13 @@ const CustomerReviews = () => {
       id="customers-reviews"
       className="position-relative padding-large"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        height: '600px',
-      }}
-    >
+        backgroundImage: `url(/assets/images/banner-image-bg-1.jpg)`,
+        backgroundSize: "cover",
+        backgroundColor:"pink",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: "500px",
+      }}>
       <div className="container">
         <div className="section-title mb-4 text-center">
           <h3 className="mb-4">Customer Reviews</h3>
@@ -77,7 +75,7 @@ const CustomerReviews = () => {
           id="customerReviewsCarousel"
           className="carousel slide"
           data-bs-ride="carousel"
-          ref={carouselRef} // Reference for the carousel
+          ref={carouselRef} 
         >
           <div className="carousel-inner">
             {reviews.map((review, index) => (
@@ -97,11 +95,11 @@ const CustomerReviews = () => {
               </div>
             ))}
           </div>
-          {/* Carousel Controls with Icons */}
+          
           <button
             className="carousel-control-prev"
             type="button"
-            onClick={handlePrev} // Attach previous handler
+            onClick={handlePrev} 
           >
             <span className="carousel-control-prev-icon visually-hidden">Previous</span>
             <i className="bi bi-arrow-left-circle fs-3 text-dark"></i> {/* Left Arrow Icon */}
@@ -109,7 +107,7 @@ const CustomerReviews = () => {
           <button
             className="carousel-control-next"
             type="button"
-            onClick={handleNext} // Attach next handler
+            onClick={handleNext} 
           >
             <span className="carousel-control-next-icon visually-hidden">Next</span>
             <i className="bi bi-arrow-right-circle fs-3 text-dark"></i> {/* Right Arrow Icon */}

@@ -1,6 +1,5 @@
-/* 4.2 Billboard
-/*----------------------------------------------*/
-/*------------Swiper Arrow -----------*/
+
+
 .swiper-next,
 .swiper-prev{
   color: var(--black-color);
@@ -16,8 +15,7 @@
   }
 }
 
-/* 4.3 Icon Box - Company Services
-/*----------------------------------------------*/
+
 .icon-box .icon-box-icon svg {
   width: 33px;
   height: 33px;
@@ -29,9 +27,6 @@
     flex-wrap: wrap;
   }
 }
-
-/* 4.4 Product
-/*----------------------------------------------*/
 .card-concern{
   text-align: center;
   bottom: 145px;

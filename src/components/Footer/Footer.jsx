@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import "./Footer.css";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className="footer-menu">
                   <img src="/assets/images/logo.png" alt="logo" className="img-fluid mb-2" />
                   <p>
-                    Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.
+                    Explore a vast collection of books from various genres. Whether you're looking for fiction, non-fiction, or academic books, we have something for every reader.
                   </p>
                   <div className="social-links">
                     <ul className="d-flex list-unstyled">
@@ -34,10 +34,10 @@ const Footer = () => {
                   <h5 className="widget-title pb-2">Quick Links</h5>
                   <ul className="menu-list list-unstyled text-capitalize">
                     <li className="menu-item mb-1"><Link to="/">Home</Link></li>
-                    <li className="menu-item mb-1"><Link to="/about">About</Link></li>  
-                    <li className="menu-item mb-1"><Link to="/shop">Shop</Link></li>  
-                    <li className="menu-item mb-1"><Link to="/blogs">Blogs</Link></li>  
-                    <li className="menu-item mb-1"><Link to="/contact">Contact</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/about">About Us</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/shop">Shop Books</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/blogs">Book Reviews</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/contact">Contact Us</Link></li>  
                   </ul>
                 </div>
               </div>
@@ -45,13 +45,13 @@ const Footer = () => {
               
               <div className="col-lg-3 col-sm-6 pb-3">
                 <div className="footer-menu text-capitalize">
-                  <h5 className="widget-title pb-2">Help & Info Help</h5>
+                  <h5 className="widget-title pb-2">Help & Information</h5>
                   <ul className="menu-list list-unstyled">
                     <li className="menu-item mb-1"><Link to="/">Track Your Order</Link></li>
-                    <li className="menu-item mb-1"><Link to="/">Returns Policies</Link></li>  
-                    <li className="menu-item mb-1"><Link to="/">Shipping + Delivery</Link></li>  
-                    <li className="menu-item mb-1"><Link to="/contact">Contact Us</Link></li> 
-                    <li className="menu-item mb-1"><Link to="/">Faqs</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/">Returns and Exchanges</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/">Shipping Information</Link></li>  
+                    <li className="menu-item mb-1"><Link to="/contact">Customer Support</Link></li> 
+                    <li className="menu-item mb-1"><Link to="/">FAQ</Link></li>  
                   </ul>
                 </div>
               </div>
@@ -61,10 +61,10 @@ const Footer = () => {
                 <div className="footer-menu contact-item">
                   <h5 className="widget-title text-capitalize pb-2">Contact Us</h5>
                   <p>
-                    Do you have any queries or suggestions? <a href="mailto:yourinfo@gmail.com" className="text-decoration-underline">yourinfo@gmail.com</a>
+                    Have a question or need assistance? Reach out to us at <a href="mailto:support@bookstore.com" className="text-decoration-underline">support@bookstore.com</a>
                   </p>
                   <p>
-                    If you need support? Just give us a call. <a href="tel:+5511122233344" className="text-decoration-underline">+55 111 222 333 44</a>
+                    For immediate support, give us a call at <a href="tel:+1234567890" className="text-decoration-underline">+1 (234) 567-890</a>
                   </p>
                 </div>
               </div>

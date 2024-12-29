@@ -1,26 +1,26 @@
 import React from "react";
-import "./CompanyServices.css"; // Optional: Add custom styles if required.
+import "./CompanyServices.css";
 
 const services = [
   {
     iconClass: "cart-outline",
-    title: "Free delivery",
-    description: "Consectetur adipi elit lorem ipsum dolor sit amet.",
+    title: "Free Shipping on Books",
+    description: "Get free delivery on all orders of books across the country.",
   },
   {
     iconClass: "quality",
-    title: "Quality guarantee",
-    description: "Dolor sit amet orem ipsu mcons ectetur adipi elit.",
+    title: "Quality Guarantee",
+    description: "We ensure that every book we sell is of the highest quality.",
   },
   {
     iconClass: "price-tag",
-    title: "Daily offers",
-    description: "Amet consectetur adipi elit loreme ipsum dolor sit.",
+    title: "Exclusive Book Offers",
+    description: "Enjoy daily offers on a wide range of books at unbeatable prices.",
   },
   {
     iconClass: "shield-plus",
-    title: "100% secure payment",
-    description: "Rem Lopsum dolor sit amet, consectetur adipi elit.",
+    title: "Secure Online Payment",
+    description: "Make secure payments online and enjoy shopping without any worries.",
   },
 ];
 

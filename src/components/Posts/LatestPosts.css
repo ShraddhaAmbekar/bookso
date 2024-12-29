@@ -1,0 +1,60 @@
+#latest-posts {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+#latest-posts .section-title {
+  margin-bottom: 2rem;
+}
+
+#latest-posts .section-title h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#latest-posts .section-title .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#latest-posts .section-title .btn:hover {
+  background-color: #0056b3;
+}
+
+#latest-posts .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#latest-posts .card:hover {
+  transform: translateY(-5px);
+}
+
+#latest-posts .card img {
+  border-radius: 10px;
+}
+
+#latest-posts .card-body {
+  padding: 0 1.5rem;
+}
+
+#latest-posts .card-title a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+#latest-posts .card-title a:hover {
+  color: #007bff;
+}
+
+#latest-posts .text-primary {
+  color: #007bff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}

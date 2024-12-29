@@ -1,49 +1,81 @@
-import React from "react";
-import "./Blog.css"; // Custom CSS file for styling
+import React from 'react';
+import './Blog.css';
 
 const Blog = () => {
-  const posts = [
+  const blogPosts = [
     {
-      title: "The Future of Book Reading",
-      date: "December 22, 2024",
-      author: "John Doe",
-      content:
-        "In this post, we will explore how technology is reshaping the way we read books...",
-      tags: ["Technology", "Books", "Reading"],
+      category: 'Romance',
+      title: 'Top 5 Romance Novels You Must Read',
+      excerpt: 'Discover the most captivating romance novels that will steal your heart and emotions...',
+      image: '/assets/images/category1.jpg',
     },
     {
-      title: "Top 5 Books for 2025",
-      date: "December 21, 2024",
-      author: "Jane Smith",
-      content:
-        "Looking for books to read in 2025? Here are the top 5 books to add to your list...",
-      tags: ["Books", "Recommendations", "Reading List"],
+      category: 'Lifestyle',
+      title: 'The Ultimate Guide to a Healthier Lifestyle',
+      excerpt: 'Start living your best life with these simple but effective lifestyle changes...',
+      image: '/assets/images/category2.jpg',
+    },
+    {
+      category: 'Recipe',
+      title: 'Delicious Breakfast Recipes for a Good Start',
+      excerpt: 'Looking for healthy and easy breakfast ideas? Here are some mouthwatering recipes...',
+      image: '/assets/images/category3.jpg',
+    },
+    {
+      category: 'Science Fiction',
+      title: 'Best Science Fiction Books of All Time',
+      excerpt: 'Explore the best sci-fi books that will take you on thrilling adventures through time and space...',
+      image: '/assets/images/category4.jpg',
+    },
+    {
+      category: 'Fantasy',
+      title: 'Must-Read Fantasy Books for All Ages',
+      excerpt: 'Dive into magical worlds with these fantastic fantasy books that will transport you...',
+      image: '/assets/images/category5.jpg',
+    },
+    {
+      category: 'Self-Help',
+      title: 'How to Achieve Your Goals in 2025',
+      excerpt: 'Set realistic goals and take actionable steps to make this your most productive year...',
+      image: '/assets/images/category6.jpg',
+    },
+    {
+      category: 'Technology',
+      title: 'Top 10 Tech Innovations of the Decade',
+      excerpt: 'Stay ahead of the curve with the top technological advancements that have changed the world...',
+      image: '/assets/images/category7.jpg',
     },
   ];
 
   return (
-    <div className="blog-container">
-      <h1>Book House Blog</h1>
-      <div className="blog-posts">
-        {posts.map((post, index) => (
-          <div key={index} className="blog-post">
-            <h2>{post.title}</h2>
-            <div className="post-meta">
-              <span className="author">By {post.author}</span>
-              <span className="date">{post.date}</span>
+    <section id="blog" className="padding-large pt-0">
+      <div className="container">
+        <div className="section-title overflow-hidden mb-4">
+          <h3 className="d-flex align-items-center">Latest Blog Posts</h3>
+        </div>
+
+        <div className="row">
+          {blogPosts.map((post, index) => (
+            <div key={index} className="col-md-4 col-lg-3">
+              <div className="card text-center mb-4 border-0 rounded-3 position-relative">
+                <img
+                  src={post.image}
+                  className="img-fluid rounded-3"
+                  alt={post.category}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{post.title}</h5>
+                  <p className="card-text">{post.excerpt}</p>
+                  <button className="btn btn-primary" onClick={() => alert('Feature coming soon')}>
+                    Read More
+                  </button>
+                </div>
+              </div>
             </div>
-            <p className="post-content">{post.content}</p>
-            <div className="tags">
-              {post.tags.map((tag, index) => (
-                <span key={index} className="tag">
-                  #{tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
