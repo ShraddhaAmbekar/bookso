@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Billboard.css";
+import { Link } from "react-router-dom";
 
 const Billboard = () => {
   return (
@@ -26,9 +27,9 @@ const Billboard = () => {
                   <div className="banner-content">
                     <h2>The Fine Print Book Collection</h2>
                     <p>Best Offer Save 30%. Grab it now!</p>
-                    <a href="index.html" className="btn btn-primary mt-3">
+                    <Link to="/shop" className="btn btn-primary mt-3">
                       Shop Collection
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-6 text-center">
@@ -51,9 +52,9 @@ const Billboard = () => {
                   <div className="banner-content">
                     <h2>How Innovation Works</h2>
                     <p>Discount available. Grab it now!</p>
-                    <a href="index.html" className="btn btn-primary mt-3">
+                    <Link to="/shop" className="btn btn-primary mt-3">
                       Shop Product
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-6 text-center">
@@ -76,9 +77,9 @@ const Billboard = () => {
                   <div className="banner-content">
                     <h2>Your Heart is the Sea</h2>
                     <p>Limited stocks available. Grab it now!</p>
-                    <a href="index.html" className="btn btn-primary mt-3">
+                    <Link to="/shop" className="btn btn-primary mt-3">
                       Shop Collection
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-md-6 text-center">

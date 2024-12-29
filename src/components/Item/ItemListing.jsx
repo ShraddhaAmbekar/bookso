@@ -122,7 +122,7 @@ const ItemsListing = () => {
                     <img src={book.imgSrc} className="img-fluid shadow-sm" alt="book item" />
                     <div className="item-content ms-3">
                       <h6 className="mb-0 fw-bold">
-                        <a href="index.html">{book.title}</a>
+                        <a href="">{book.title}</a>
                       </h6>
                       <div className="review-content d-flex">
                         <p className="my-2 me-2 fs-6 text-black-50">{book.author}</p>
@@ -149,7 +149,7 @@ const ItemsListing = () => {
                     <img src={book.imgSrc} className="img-fluid shadow-sm" alt="book item" />
                     <div className="item-content ms-3">
                       <h6 className="mb-0 fw-bold">
-                        <a href="index.html">{book.title}</a>
+                        <a href="">{book.title}</a>
                       </h6>
                       <div className="review-content d-flex">
                         <p className="my-2 me-2 fs-6 text-black-50">{book.author}</p>
@@ -176,7 +176,7 @@ const ItemsListing = () => {
                     <img src={book.imgSrc} className="img-fluid shadow-sm" alt="book item" />
                     <div className="item-content ms-3">
                       <h6 className="mb-0 fw-bold">
-                        <a href="index.html">{book.title}</a>
+                        <a href="">{book.title}</a>
                       </h6>
                       <div className="review-content d-flex">
                         <p className="my-2 me-2 fs-6 text-black-50">{book.author}</p>
@@ -204,7 +204,7 @@ const ItemsListing = () => {
                     <img src={book.imgSrc} className="img-fluid shadow-sm" alt="book item" />
                     <div className="item-content ms-3">
                       <h6 className="mb-0 fw-bold">
-                        <a href="index.html">{book.title}</a>
+                        <a href="">{book.title}</a>
                       </h6>
                       <div className="review-content d-flex">
                         <p className="my-2 me-2 fs-6 text-black-50">{book.author}</p>

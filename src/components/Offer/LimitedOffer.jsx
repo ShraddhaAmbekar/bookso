@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const LimitedOffer = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -71,9 +72,9 @@ const LimitedOffer = () => {
                 <small>Sec</small>
               </div>
             </div>
-            <a href="/shop" className="btn mt-3">
+            <Link to="/shop" className="btn mt-3">
               Shop Our Collection
-            </a>
+            </Link>
           </div>
         </div>
       </div>
